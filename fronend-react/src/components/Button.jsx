@@ -1,10 +1,9 @@
-
-
+import {Link} from 'react-router-dom'
 function Button(props) {
   return (
-    <>  <a className={props.className} href='#'>
+    <>  <Link className={props.className} to={props.url}>
                 {props.text}
-            </a></>
+            </Link></>
   )
 }
 
